@@ -1,0 +1,96 @@
+/* Custom CSS */
+.text-lg-red {
+  color: #ed1d24;
+  font-size: 30px; /* Color the first row in red */
+}
+
+.company-name {
+  color: #ffffff;
+  font-size: 20px; /* Color the second row in white */
+}
+
+.smallLogo {
+  border-radius: 50%;
+  height: 80px; /* Adjust the height as needed for responsiveness */
+  width: auto;
+}
+
+#home {
+  padding-top: 150px; /* Adjust this value as needed */
+  padding-bottom: 50px; /* Adjust this value as needed */
+  background-color: #f8f9fa;
+}
+
+#services {
+  background-color: #e3f2fd; /* Light Blue */
+}
+
+#contact {
+  background-color: #e8f5e9; /* Light Green */
+  margin-bottom: 5px; /* Fill the white space or remove it */
+}
+
+.navbar {
+  background-color: #0055a2; /* Navbar background color */
+  padding: 10px 0;
+  height: auto; /* Allow height to adjust according to content */
+  position: fixed; /* Fixed position */
+  width: 100%;
+  top: 0;
+  z-index: 1000; /* Ensure navbar stays on top of other elements */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border to make the toggle button cleaner */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff; /* Navbar item color */
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ff4500; /* Hover color and active color */
+}
+
+/* Adjust navbar links for better visibility */
+.navbar-nav .nav-link {
+  padding: 10px;
+}
+
+/* Sections styling */
+section {
+  padding: 50px 0;
+  border-radius: 20px;
+  height: auto; /* Rounded corners */
+}
+
+/* Adjust section heading for better visibility */
+section h2 {
+  margin-bottom: 30px;
+}
+
+/* Adjust paragraph line height */
+section p {
+  line-height: 1.6;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-nav .nav-item {
+    margin-bottom: 10px;
+  }
+  .navbar-brand,
+  .company-name {
+    text-align: center;
+  }
+  #home {
+    padding-top: 80px; /* Adjust padding for smaller screens */
+  }
+}
