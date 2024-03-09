@@ -28,7 +28,7 @@ body {
 
 .nav-link {
   color: #333;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-right: 1.5rem;
 }
 
@@ -124,6 +124,9 @@ body {
   .nav-link {
     font-size: 0.9rem; /* Adjust font size for smaller screens */
   }
+  #home {
+    margin-top: 130px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -138,5 +141,8 @@ body {
   }
   .nav-link {
     font-size: 0.8rem; /* Further adjust font size for even smaller screens */
+  }
+  #home {
+    margin-top: 120px;
   }
 }
