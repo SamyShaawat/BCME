@@ -39,6 +39,20 @@ body {
 #home {
   margin-top: 200px;
 }
+#contact .card:hover i,
+#contact .card:hover h4 {
+  color: #87d37c;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit; /* Keeps the default color */
+}
+
+.card-link:hover {
+  text-decoration: none;
+}
+
 
 /* Media query for smaller screens */
 @media (max-width: 900px) {
