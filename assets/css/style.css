@@ -1,10 +1,11 @@
+/* Reset body margin, padding, and apply background color */
 body {
   margin: 0;
   padding: 2rem;
-  /* Modern, clean font */
   background-color: #f2f2f2; /* Light gray background */
 }
 
+/* Navbar styles */
 .navbar {
   background-color: #fff; /* White navbar */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -36,14 +37,66 @@ body {
   font-weight: bolder;
 }
 
+/* Styles for number circle */
+.number-circle {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  background-color: #007bff; /* Change color as needed */
+  color: #fff;
+  font-size: 25px;
+}
+
+/* Additional CSS for service cards */
+.service-card {
+  border: 1px solid #ced4da; /* Border color */
+  border-radius: 10px; /* Border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+  cursor: pointer; /* Cursor indicator */
+  padding-top: 15px; /* Padding above the number */
+  height: 100%; /* Ensures all cards have the same height */
+}
+
+.service-card:hover {
+  transform: translateY(-5px); /* Add a slight lift effect on hover */
+}
+
+/* Ensure uniform height for all service cards */
+.service-card .number-circle {
+  display: inline-block;
+  width: 40px; /* Width of the circle */
+  height: 40px; /* Height of the circle */
+  border-radius: 50%; /* Make it a circle */
+  background-color: #007bff; /* Background color of the circle */
+  color: #fff; /* Text color */
+  line-height: 40px; /* Center the text vertically */
+  font-size: 18px; /* Font size of the number */
+}
+
+/* Adjust text alignment in service card */
+.service-card .text-center {
+  margin-bottom: 10px; /* Add margin to bottom */
+}
+
+/* Additional CSS for card hover effect */
+.custom-card:hover {
+  cursor: pointer;
+  transform: translateY(-5px); /* Add lift effect */
+}
+
+/* Additional styles for sections */
 #home {
   margin-top: 200px;
 }
+
 #contact .card:hover i,
 #contact .card:hover h4 {
-  color: #87d37c;
+  color: #87d37c; /* Change color on hover */
 }
 
+/* Link styles */
 .card-link {
   text-decoration: none;
   color: inherit; /* Keeps the default color */
@@ -53,8 +106,7 @@ body {
   text-decoration: none;
 }
 
-
-/* Media query for smaller screens */
+/* Media queries for responsiveness */
 @media (max-width: 900px) {
   .navbar-brand {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
@@ -74,7 +126,6 @@ body {
   }
 }
 
-/* Media query for even smaller screens */
 @media (max-width: 576px) {
   .navbar-brand {
     font-size: 1.2rem; /* Further adjust font size for even smaller screens */
