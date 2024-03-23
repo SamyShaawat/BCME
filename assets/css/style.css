@@ -35,7 +35,7 @@ body:not(footer) {
 /* CSS for active navbar link */
 .nav-link.active {
   color: red;
-  /* font-weight: bold; Make the font weight bolder */
+  font-weight: bold;
 }
 
 .nav-link:hover {

@@ -35,8 +35,9 @@ $(document).ready(function () {
     });
 });
 
+
 // JavaScript to scroll to the "Home" section on page refresh
-$(document).ready(function() {
+$(document).ready(function () {
     const navbarHeight = $('.navbar').outerHeight();
     // Scroll to the "Home" section
     $('html, body').animate({
