@@ -1,5 +1,5 @@
 /* Reset body margin, padding, and apply background color */
-body {
+body:not(footer) {
   margin: 0;
   padding: 2rem;
   background-color: #f2f2f2; /* Light gray background */
@@ -7,9 +7,10 @@ body {
 
 /* Navbar styles */
 .navbar {
-  background-color: #fff; /* White navbar */
+  background-color: #005baa; /* White navbar */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   padding: 2rem 2rem; /* Adjust padding for a cleaner look */
+  border-radius: 0px 0px 70px 70px;
 }
 
 /* Common styles for company name and navbar */
@@ -27,12 +28,14 @@ body {
 }
 
 .nav-link {
-  color: #333;
+  color: #fff;
   margin-right: 1.5rem;
 }
 
+/* CSS for active navbar link */
 .nav-link.active {
-  color: #007bff;
+  color: red;
+  /* font-weight: bold; Make the font weight bolder */
 }
 
 .nav-link:hover {
@@ -164,7 +167,12 @@ body {
 .custom-card .card-text {
   font-size: 1.1rem; /* Adjust font size as needed */
 }
-
+footer {
+  background-color: #005baa; /* Background color */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 2rem; /* Padding for the content inside the footer */
+  border-radius: 70px 70px 0 0; /* Adjust border radius */
+}
 @media (max-width: 1400px) {
   .custom-card .card-title {
     font-size: 1.5rem; /* Further adjust font size for smaller screens */
