@@ -1,0 +1,193 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-navy-50: oklch(0.97 0.01 245);
+  --color-navy-100: oklch(0.92 0.03 245);
+  --color-navy-200: oklch(0.82 0.05 245);
+  --color-navy-300: oklch(0.7 0.07 245);
+  --color-navy-400: oklch(0.58 0.09 245);
+  --color-navy-500: oklch(0.48 0.11 245);
+  --color-navy-600: oklch(0.4 0.12 245);
+  --color-navy-700: oklch(0.32 0.1 245);
+  --color-navy-800: oklch(0.24 0.08 245);
+  --color-navy-900: oklch(0.18 0.06 245);
+  --color-navy-950: oklch(0.12 0.04 245);
+
+  --color-crimson-400: oklch(0.65 0.22 25);
+  --color-crimson-500: oklch(0.55 0.23 25);
+  --color-crimson-600: oklch(0.48 0.22 25);
+  --color-crimson-700: oklch(0.38 0.18 25);
+
+  --color-gold-300: oklch(0.92 0.16 90);
+  --color-gold-400: oklch(0.84 0.19 86);
+  --color-gold-500: oklch(0.77 0.2 82);
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Rajdhani', 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-navy-950);
+    color: white;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: color-mix(in oklch, var(--color-crimson-600) 30%, transparent);
+    color: white;
+  }
+}
+
+@utility glass-card {
+  background: color-mix(in oklch, white 5%, transparent);
+  backdrop-filter: blur(10px);
+  border: 1px solid color-mix(in oklch, white 8%, transparent);
+  border-radius: var(--radius-2xl);
+}
+
+@utility btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-4);
+  width: fit-content;
+  background-color: var(--color-crimson-600);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: var(--radius-lg);
+  border: none;
+  transition: all 300ms ease;
+  box-shadow: 0 4px 14px color-mix(in oklch, var(--color-crimson-600) 40%, transparent);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--color-crimson-500);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px color-mix(in oklch, var(--color-crimson-600) 50%, transparent);
+  }
+}
+
+@utility btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-4);
+  width: fit-content;
+  border: 2px solid color-mix(in oklch, white 40%, transparent);
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 14px 28px;
+  border-radius: var(--radius-lg);
+  background: transparent;
+  transition: all 300ms ease;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    border-color: color-mix(in oklch, white 70%, transparent);
+    background: color-mix(in oklch, white 10%, transparent);
+    transform: translateY(-2px);
+  }
+}
+
+@utility section-title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 1.1;
+  color: white;
+  letter-spacing: -0.03em;
+
+  @media (min-width: 640px) {
+    font-size: 52px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 64px;
+  }
+}
+
+@utility section-subtitle {
+  color: var(--color-navy-200);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+@utility divider-line {
+  width: var(--spacing-16);
+  height: var(--spacing-1);
+  background-color: var(--color-crimson-500);
+  border-radius: var(--radius-full);
+}
+
+@utility text-gradient {
+  background: linear-gradient(135deg, #fff 0%, #93c5fd 50%, #e02424 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@utility bg-grid {
+  background-image:
+    linear-gradient(color-mix(in oklch, white 3%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklch, white 3%, transparent) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+@utility form-input {
+  width: 100%;
+  background: color-mix(in oklch, white 5%, transparent);
+  border: 1px solid color-mix(in oklch, white 10%, transparent);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-3) var(--spacing-4);
+  color: white;
+  font-size: var(--text-sm);
+  transition: all 200ms ease;
+  outline: none;
+
+  &::placeholder {
+    color: var(--color-navy-400);
+  }
+
+  &:focus {
+    border-color: color-mix(in oklch, var(--color-crimson-500) 50%, transparent);
+    background: color-mix(in oklch, white 8%, transparent);
+  }
+}
+
+@utility nav-link {
+  color: var(--color-navy-200);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  position: relative;
+  transition: color 200ms ease;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-crimson-500);
+    transition: width 300ms ease;
+  }
+
+  &:hover {
+    color: white;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
