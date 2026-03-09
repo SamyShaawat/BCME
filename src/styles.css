@@ -191,3 +191,39 @@
     }
   }
 }
+
+/* Animation Keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes ping {
+  75%, 100% { transform: scale(2); opacity: 0; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(-5%); animation-timing-function: cubic-bezier(0.8, 0, 1, 1); }
+  50% { transform: translateY(0); animation-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+}
+
+/* Ensure animations work on mobile */
+@media (prefers-reduced-motion: no-preference) {
+  .animate-\[float_.*\],
+  .animate-\[spin_.*\],
+  .animate-\[pulse_.*\],
+  .animate-\[ping_.*\],
+  .animate-\[bounce_.*\] {
+    animation-iteration-count: infinite;
+  }
+}
