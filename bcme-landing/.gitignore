@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+deploy-*/
+
+# Cache
+*.tsbuildinfo
+tsc_output.txt
+.nx/cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+pnpm-debug.log*
+
+# Environment
+.env.local
+.env.*.local
+
+# Documentation
+*_SUMMARY.md
+*_REPORT.md
+*_GUIDE.md
+serve-fast.sh
+
+# Vite
+vite.config.mjs.map
+
+# Old project
+assets/
+LICENSE
