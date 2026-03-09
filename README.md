@@ -1,46 +1,70 @@
-# BCME (BC Marine Electronics Inc.)
+# BCME Landing Page - Restored
 
-BCME (BC Marine Electronics Inc.) is a platform specialized in providing GMDSS & NAVCOM services for the maritime industry. Founded in 2023 in British Columbia, BCME offers services mandated by ships' classification societies, recognized organizations, and flag states, as well as ship owners/managers' requirements.
+**BC Marine Electronics Inc. – Official Landing Page**
 
-## Table of Contents
+## ✅ Project Restored!
 
-- [BCME (BC Marine Electronics Inc.)](#bcme-bc-marine-electronics-inc)
-  - [Table of Contents](#table-of-contents)
-  - [About](#about)
-  - [Services](#services)
-  - [How We Provide Our Services](#how-we-provide-our-services)
-  - [Contact Us](#contact-us)
-  - [License](#license)
+All files have been recreated successfully.
 
-## About
+## 🚀 Quick Start
 
-In 2023, BC Marine Electronics “BCME” was founded in British Columbia by its founder, a former Senior Marine Safety Inspector, as a platform specialized in providing the maritime industry with GMDSS & NAVCOM services that are commonly mandated by ships’ classification societies, recognized organizations, and flag states, besides, ship owners/managers’ requirements.
+```bash
+cd /media/samy/Home/My-Github/BCME/bcme-landing
+pnpm install
+pnpm dev
+```
 
-## Services
+## 📁 Project Structure
 
-BCME offers a range of services including:
+```
+bcme-landing/
+├── src/
+│   ├── app/
+│   │   ├── app.tsx
+│   │   └── components/
+│   │       ├── About/
+│   │       ├── Contact/
+│   │       ├── Footer/
+│   │       ├── Hero/
+│   │       ├── Navbar/
+│   │       ├── Services/
+│   │       ├── WhyUs/
+│   │       ├── seo/
+│   │       └── ui/
+│   ├── constants/
+│   ├── enums/
+│   ├── hooks/
+│   ├── types/
+│   ├── utils/
+│   ├── main.tsx
+│   └── styles.css
+├── public/
+│   ├── logo-shield.png (add manually)
+│   └── logo-banner.png (add manually)
+├── package.json
+├── tsconfig.json
+├── vite.config.mts
+└── nx.json
+```
 
-- **Radio Surveys & GMDSS Inspections**
-- **Gyro & Magnetic Compass Services**
-- **Shore-based Maintenance Contracts**
-- **Servicing & Programming**
-- **Supply, Programming, Maintenance, and Repair**
-- **VDR & SVDR Retrofitting, Repairs, Maintenance**
-- **Satellite Communication Terminal Activation and Airtime Plan Options**
+## 📝 Commands
 
-## How We Provide Our Services
+```bash
+pnpm install      # Install dependencies
+pnpm dev         # Start development server
+pnpm build       # Build for production
+pnpm preview     # Preview production build
+```
 
-The BCME team is dedicated to providing efficient and cost-effective solutions. We have two dedicated NAVCOM support teams, the Domestic NAVCOM Department and the International NAVCOM Department, ready to assist our customers. Additionally, we ensure efficiency when handling repair requisitions through our NAVSUPPORT team.
+## 🎨 Features
 
-## Contact Us
+- ✅ React 19 + TypeScript
+- ✅ TailwindCSS v4
+- ✅ Vite + NX
+- ✅ Fully responsive
+- ✅ SEO optimized
+- ✅ Modern UI design
 
-Get in touch with us today to learn more about our services and how we can assist you:
+## 📌 Note
 
-- **Call Us**: +1 778 952 3346
-- **Office Location**: 9073 137a St. - Surrey Bc V3v 7x1
-- **Email**: service@img-bcme.com
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
+Add your logo files (`logo-shield.png` and `logo-banner.png`) to the `public/` folder before building.
