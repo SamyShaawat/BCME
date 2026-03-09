@@ -9,7 +9,7 @@ deploy-*/
 # Cache
 *.tsbuildinfo
 tsc_output.txt
-.nx/cache/
+.nx/
 
 # IDE
 .vscode/
@@ -33,7 +33,9 @@ pnpm-debug.log*
 *_SUMMARY.md
 *_REPORT.md
 *_GUIDE.md
+*_SETUP.md
 serve-fast.sh
+commit.sh
 
 # Vite
 vite.config.mjs.map
