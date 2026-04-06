@@ -9,12 +9,12 @@ export default function AboutContent(): JSX.Element {
         <Badge variant="crimson">Who We Are</Badge>
       </div>
       <h2 className="section-title mt-4 sm:mt-6 mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl leading-tight break-words">
-        A Trusted Name in <span className="text-crimson-400">Maritime</span> Electronics
+        A Trusted Name in <span className="text-crimson-400">Marine</span> Electronics
       </h2>
       <div className="divider-line mb-6 sm:mb-8" />
       <div className="space-y-4 sm:space-y-5 text-navy-200 leading-relaxed text-sm sm:text-base">
         <p className="break-words hyphens-auto">
-          <strong className="text-white break-words">{COMPANY_NAME}</strong> is a Canadian maritime technical service provider specializing in <span className="text-gold-400 font-medium break-words">NAVCOM and marine electronic solutions</span> for the global shipping industry.
+          <strong className="text-white break-words">{COMPANY_NAME}</strong> is a Canadian marine technical service provider specializing in <span className="text-gold-400 font-medium break-words">NAVCOM and marine electronic solutions</span> for the global shipping industry.
         </p>
         <p className="break-words hyphens-auto">
           We deliver class-compliant, reliable, and efficient services with a strong commitment to vessel safety, regulatory compliance, and operational performance.

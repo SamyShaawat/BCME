@@ -30,7 +30,7 @@ export default function Hero(): JSX.Element {
             <h1 className="section-title mb-8">
               <span className="block text-white">Navigating the</span>
               <span className="block text-gradient">Future of</span>
-              <span className="block">Maritime Electronics</span>
+              <span className="block">Marine Electronics</span>
             </h1>
             <p className="section-subtitle mb-10 max-w-xl mx-auto lg:mx-0">
               Class-compliant, reliable, and efficient NAVCOM solutions for the global shipping industry.

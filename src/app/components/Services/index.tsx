@@ -12,7 +12,7 @@ export default function Services(): JSX.Element {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader 
           badge="Our Services & Capabilities" 
-          title={<>Comprehensive <span className="text-crimson-400">Maritime</span> Solutions</>} 
+          title={<>Comprehensive <span className="text-crimson-400">Marine</span> Solutions</>} 
           subtitle="From routine surveys to complex retrofit projects, we deliver the full spectrum of marine electronics services with precision and reliability." 
         />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
